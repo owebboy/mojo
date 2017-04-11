@@ -1,0 +1,28 @@
+{
+  "name": "mojo",
+  "version": "1.0.0",
+  "description": "Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.",
+  "main": "\"\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owebboy/mojo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/owebboy/mojo/issues"
+  },
+  "homepage": "https://github.com/owebboy/mojo#readme",
+  "devDependencies": {
+    "git-scripts": "^0.2.1",
+    "surge": "^0.19.0"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "harp compile; surge --project ./www --domain example-githooks.surge.sh"
+    }
+  }
+}
