@@ -22,7 +22,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "harp compile; surge --project ./www --domain example-githooks.surge.sh"
+      "pre-push": "harp compile; surge --project ./www --domain mojo.surge.sh"
     }
   }
 }
